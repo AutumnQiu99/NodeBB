@@ -78,8 +78,8 @@ module.exports = function (Topics) {
 	};
 
 	Topics.post = async function (data) {
-		console.log("autumn qiu");
-		
+		console.log('autumn qiu');
+
 		data = await plugins.hooks.fire('filter:topic.post', data);
 		const { uid } = data;
 
